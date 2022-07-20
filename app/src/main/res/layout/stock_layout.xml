@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding"
+    android:background="@color/black_overlay">
+
+    <TextView
+        android:id="@+id/text_view_stock_currency_and_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:theme="@style/LightText" />
+
+    <TextView
+        android:id="@+id/text_view_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/LightText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_view_stock_price_dynamics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_stock_currency_and_symbol"
+        android:layout_marginTop="@dimen/layout_marginTop"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/text_view_percent_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/layout_marginHorizontal"
+        tools:theme="@style/StagnationStockStyle"
+        app:layout_constraintBottom_toBottomOf="@+id/image_view_stock_price_dynamics"
+        app:layout_constraintStart_toEndOf="@+id/image_view_stock_price_dynamics"
+        app:layout_constraintTop_toTopOf="@+id/image_view_stock_price_dynamics" />
+
+    <TextView
+        android:id="@+id/text_view_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:theme="@style/StagnationStockStyle"
+        android:layout_marginHorizontal="@dimen/layout_marginHorizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/text_view_percent_change"
+        app:layout_constraintStart_toEndOf="@+id/text_view_percent_change"
+        app:layout_constraintTop_toTopOf="@+id/text_view_percent_change" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

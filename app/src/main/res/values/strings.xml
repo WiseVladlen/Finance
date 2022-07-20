@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Finance</string>
+
+    <string name="stock_currency_and_symbol_field">%1$s/%2$s</string>
+    <string name="change_field">(%1$s)</string>
+    <string name="message_no_internet_connection">Нет соединения с интернетом</string>
+    <string name="message_connection_error">Ошибка подключения</string>
+</resources>
